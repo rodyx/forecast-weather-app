@@ -1,0 +1,35 @@
+.weatherDataContainer {
+    padding: 50px 50px;
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1.5fr;
+    text-shadow: 1px 1px 2px black;
+    
+    & h2 {
+        font-size: inherit;
+        color: white;
+        margin: 25px 0 10px;
+        text-shadow: none;
+    }
+    
+    & .citiesSearch {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 25px;
+        border-bottom: 1px solid #829f9a;
+    }
+
+    & .weatherDataDetails {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        border-bottom: 1px solid #829f9a;
+
+        > div {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

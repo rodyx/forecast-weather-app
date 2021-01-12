@@ -1,0 +1,79 @@
+.mainContainer {
+    width: 1450px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 'landscape information';
+    background-size: cover;
+    box-shadow: 0 0 200px rgba(0,0,0,1);
+    transition: all 1.5s ease;
+}
+
+.information {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    backdrop-filter: blur(35px);
+    
+    color: #bde2dc;
+    grid-area: information;
+    
+
+    & .inputSearch {
+        margin-left: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 50px;
+        
+        & form {
+            display: flex;
+        }
+
+        & input {
+            height: 30px;
+            flex: 1;
+            border: none;
+            background: none;
+            font-size: 1.5rem;
+            font-family: inherit;
+            color: #829f9a;
+            border-bottom: 1px solid #829f9a;
+            text-shadow: 1px 1px 2px black;
+
+            &:focus {
+                border: none;
+                outline: none;
+            }
+
+            &::placeholder {
+                color: inherit;
+                text-shadow: 0.5px 0.5px 0.5px black;
+            }
+        }
+
+        & > button {
+            border: none;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            background: #829f9a;
+            
+            opacity: 0.6;
+            color: black;
+            transition: all 0.4s;
+
+            &:focus {
+                border: none;
+                outline: none;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background: #627975;
+            }
+        }
+    }
+}

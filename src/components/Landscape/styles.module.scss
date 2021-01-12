@@ -1,0 +1,47 @@
+.landscape {
+    padding: 50px 80px;
+    display: flex;
+    color: white;
+    grid-area: landscape;
+    text-shadow: 1px 1px 2px black, 0 0 2px #5e4f4f;
+    
+    .photoAuthor {
+        position: absolute;
+        width: auto;
+        height: 50px;
+    }
+
+    & .currentDataWrapper {
+        align-self: flex-end;
+        width: auto;
+        max-height: 130px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-end;
+        gap: 30px;
+
+        & .currentDegress {
+            max-height: 130px;
+            font-size: 120px;
+        }
+
+        & .currentLocation {
+            display: flex;
+            width: auto;
+            flex-flow: column wrap;
+            
+            & .currentCity {
+                max-height: 80px;
+                word-wrap: nowrap;
+                font-size: 45px;
+                word-wrap: nowrap;
+            }
+        }
+
+        & .currentWeather {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+    }
+}
